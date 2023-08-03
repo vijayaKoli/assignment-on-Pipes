@@ -1,0 +1,30 @@
+<h1>
+    Pipes for String
+</h1>
+<h1 [style.color]="'red'">{{name | lowercase}}</h1>
+<h1 [style.color]="'blue'">{{name | uppercase}}</h1>
+<h2 [style.color]="'vilote'">{{name | titlecase}}</h2>
+<h2 [style.color]="'orange'">{{name | titlecase}}</h2>
+
+<h2 [style.color]="'gray'">{{name | slice:10}}</h2>
+
+<h1>
+    pipes for Date
+</h1>
+<h2>{{today}}</h2>
+<h2 [style.color]="'red'">{{today | date:'short'}}</h2>
+
+
+<h1>
+    Pipes for JSON output
+  </h1>
+  <h2>{{Institute | json}}</h2>
+
+  <h1>
+  Pipes for Currency
+</h1>
+<h2>{{0.78 | percent}}</h2>
+<h2>{{456 | currency}}</h2>
+<h2>{{7 | currency: 'INR'}}</h2>
+
+
